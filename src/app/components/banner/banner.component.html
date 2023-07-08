@@ -1,0 +1,17 @@
+<h1>
+  Angular 13 HttpClient for Sending Http Request Example - ItSolutionStuff.com
+</h1>
+<div *ngIf="posts==null">
+  Loading...
+</div>
+<div *ngIf="posts!==null">
+  <ul class="list-group">
+    <li *ngFor="let post of posts" class="list-group-item">
+      {{ post.title }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="posts.length===0">
+Empty
+</div>
+
