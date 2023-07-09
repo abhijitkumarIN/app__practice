@@ -9,6 +9,13 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ApplyComponent } from './pages/apply/apply.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModulesComponent } from './components/material/material.modules/material.modules.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { TeamsComponent } from './pages/teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,13 @@ import { ApplyComponent } from './pages/apply/apply.component';
     AboutUsComponent,
     BlogComponent,
     ButtonComponent,
-    ApplyComponent
+    ApplyComponent,
+    NavbarComponent,
+    FooterComponent,
+    LoginComponent,
+    SignupComponent,
+    TeamsComponent,
+
   ],
   imports: [
     HttpClientModule,
@@ -25,6 +38,9 @@ import { ApplyComponent } from './pages/apply/apply.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModulesComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]

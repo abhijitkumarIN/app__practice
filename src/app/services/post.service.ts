@@ -11,4 +11,8 @@ export class PostService {
   getPosts(){
     return this.httpClient.get(this.url);
   }
+  // dataPosts(data:any){
+  //   return this.httpClient.post(this.url , data)
+  // }
+
 }

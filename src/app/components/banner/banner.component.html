@@ -1,8 +1,12 @@
+
+
+
+
 <h1>
   Angular 13 HttpClient for Sending Http Request Example - ItSolutionStuff.com
 </h1>
 <div *ngIf="posts==null">
-  Loading...
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="loading..."/>
 </div>
 <div *ngIf="posts!==null">
   <ul class="list-group">
@@ -15,3 +19,50 @@
 Empty
 </div>
 
+<!--  -->
+<div>
+ <button mat-flat-button>clickkc</button>
+</div>
+<div>
+  <input  [(ngModel)]="demo" matInput placeholder="Ex. Pizza" value="">
+  <input #box (input)="myFucntion(box.value)"   matInput placeholder="byfunction" value="">
+
+{{demo}}
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input   matInput placeholder="Ex. Pizza" value="">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <textarea  matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+  </form>
+</div>
+
+<div class="">
+  <h4>Basic mat-select</h4>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h4>Basic native select</h4>
+<mat-form-field>
+  <mat-label>Cars</mat-label>
+  <select matNativeControl required  >
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>
+
+</div>
+<div >
+
+</div>
