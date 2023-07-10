@@ -9,19 +9,28 @@ import {FormGroup, FormControl, FormsModule, ReactiveFormsModule} from '@angular
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const materialComponent = [
   MatButtonModule,
   MatInputModule,
   MatFormFieldModule,
   FormsModule,
-  NgFor,
+  // NgFor,
+  MatNativeDateModule,
+  MatSlideToggleModule,
   MatSelectModule,
-  MatDatepickerModule
+  MatDatepickerModule,
+  MatAutocompleteModule,
+  MatIconModule,
+  MatExpansionModule
 ]
 
 @NgModule({
   imports: [materialComponent],
   exports:[materialComponent]
 })
-export class MaterialModulesComponent {}
+export class MaterialModulesComponent {
+
+}

@@ -1,0 +1,42 @@
+<main class="">
+  <div class="flex">
+    <div *ngIf="toggle">
+      <div class="min-w-[290px] bg-slate-500">
+        <div class="header_sidebar ">
+
+        </div>
+        <div class="">
+          <mat-accordion class="shadow-none rounded-none" style="box-shadow: none;">
+            <mat-expansion-panel  class="shadow-none hover:bg-slate-500 rounded-none " style="box-shadow: none;" (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false"
+                                 >
+              <mat-expansion-panel-header  class="shadow-none rounded-none hover:bg-slate-500" style="box-shadow: none;">
+                <mat-panel-title>
+                  Self
+                </mat-panel-title>
+                <mat-panel-description>
+                  Curr  {{panelOpenState ? 'open' : 'closed'}}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>I'm </p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-slate-800">
+      <div class="flex justify-between py-3">
+        <button (click)="toggle_sidebar()" class="pl-3 text-xl text-white"><mat-icon>dashboard</mat-icon></button>
+        <app-search-bar></app-search-bar>
+        <div class="flex justify-between gap-4">
+          <div class="w-10 bg-white h-10 rounded-full">A</div>
+          <div class="w-10 h-10 rounded-full">A</div>
+          <div class="w-10 h-10 rounded-full">A</div>
+        </div>
+      </div>
+      <main class="min-h-[88vh]">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+</main>

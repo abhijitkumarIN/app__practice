@@ -3,7 +3,7 @@
 <form [formGroup]="loginForm"  (ngSubmit)="loginUser()">
   <label>Name:</label>
   <input type="text" formControlName="user">
-  <span *ngIf="user && user.invalid && user.touched" class="text-red-400"> inv</span>
+  <span *ngIf="user && user.invalid && user.touched" class="text-red-400">Email is required !</span>
   <label>Email:</label>
   <input type="email" formControlName="phone">
   <button [disabled]="loginForm.invalid" type="submit">Submit</button>

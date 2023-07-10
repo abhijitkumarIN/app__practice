@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app__practice';
+  admin:boolean = true
+
+  button_toggle(){
+    this.admin=!this.admin
+  }
 }

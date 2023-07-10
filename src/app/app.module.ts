@@ -16,6 +16,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { TeamsComponent } from './pages/teams/teams.component';
+import { TableComponent } from './components/table/table.component';
+import { PublicPortalComponent } from './components/layout/public-portal/public-portal.component';
+import { AdminPortalComponent } from './components/layout/admin-portal/admin-portal.component';
+import { SearchBarComponent } from './components/layout/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,9 @@ import { TeamsComponent } from './pages/teams/teams.component';
     LoginComponent,
     SignupComponent,
     TeamsComponent,
+    TableComponent,
+    PublicPortalComponent,
+    AdminPortalComponent,
 
   ],
   imports: [
@@ -39,7 +46,8 @@ import { TeamsComponent } from './pages/teams/teams.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialModulesComponent
+    MaterialModulesComponent,
+    SearchBarComponent
 
   ],
   providers: [],

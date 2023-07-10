@@ -8,7 +8,7 @@ import { FormControl , FormGroup , FormArrayName , Validators} from '@angular/fo
 export class ApplyComponent {
 
   loginForm = new FormGroup({
-  user: new FormControl('',[Validators.required]),
+  user: new FormControl('',[Validators.required , Validators.email]),
   phone : new FormControl(''),
 })
 ngOnInit(){
