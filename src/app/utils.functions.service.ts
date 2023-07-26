@@ -87,4 +87,12 @@ export class UtilsFunctionsService {
     }
     return false;
   }
+  security(status: number ): void {
+    if ([401, 403, 400].includes(status)) {
+      this.localStorageClear()
+      window.location.href="/"
+    }else{
+      
+    }
+  }
 }
