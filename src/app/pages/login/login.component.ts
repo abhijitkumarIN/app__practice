@@ -11,6 +11,7 @@ export class LoginComponent {
   password:new FormControl('' , [Validators.required]),
  })
 
+
  loginUser(){
   console.log(this.loginForm.value ," =====  " )
  }

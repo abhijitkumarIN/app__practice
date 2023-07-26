@@ -1,0 +1,41 @@
+<form [formGroup]="registerForm" (ngSubmit)="registerFn()">
+  <div class="">
+    <input
+      type="text"
+      formControlName="name"
+      [ngClass]="{
+        error: getControl('name')?.errors && getControl('name')?.touched
+      }"
+    />
+    <section
+      class=" text-xs text-red-600"
+      *ngIf="getControl('name')?.errors && getControl('name')?.touched"
+    >
+      <small  *ngIf="getControl('name')?.errors?.['required']"
+        >Name is required</small
+      >
+      <small *ngIf="getControl('name')?.errors?.['maxlength']"
+        >Max length should be 32
+      </small>
+    </section>
+  </div>
+  <div class="">
+    <button type="submit" class="bg-red-500" [disabled]="registerForm.invalid">submit</button>
+    <div class="">
+      sss
+      <li *ngFor="let item of arr">
+        {{ item?.value }}
+        <span class="cursor-pointer px-2" (click)="remove_(item.index)">X</span>
+      </li>
+    </div>
+  </div>
+</form>
+<div >
+  <button (click)="post_api()">post api -- </button>
+</div>
+<div>
+  <h1>{{isLoading?'Loading...':''}}</h1>
+  <div *ngFor="let item of arr__post">
+    <li>{{item.title}}</li>
+  </div>
+</div>

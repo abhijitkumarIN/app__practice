@@ -7,6 +7,8 @@ import { ApplyComponent } from './pages/apply/apply.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { TeamsComponent } from './pages/teams/teams.component';
+// component
+import { StaffListingComponent } from './components/staff/staff-listing/staff-listing.component';
 const routes: Routes = [
   {
   component:AboutUsComponent,
@@ -15,6 +17,11 @@ const routes: Routes = [
 {
   component:BlogComponent,
   path:'blog'
+},
+// StaffListingComponent
+{
+  component:StaffListingComponent,
+  path:'staff'
 },
 {
   component:ApplyComponent,

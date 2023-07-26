@@ -20,6 +20,7 @@ import { TableComponent } from './components/table/table.component';
 import { PublicPortalComponent } from './components/layout/public-portal/public-portal.component';
 import { AdminPortalComponent } from './components/layout/admin-portal/admin-portal.component';
 import { SearchBarComponent } from './components/layout/search-bar/search-bar.component';
+import { StaffListingComponent } from './components/staff/staff-listing/staff-listing.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SearchBarComponent } from './components/layout/search-bar/search-bar.co
     TableComponent,
     PublicPortalComponent,
     AdminPortalComponent,
+    StaffListingComponent,
 
   ],
   imports: [
